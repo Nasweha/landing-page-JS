@@ -1,0 +1,12 @@
+header{
+    height: 45vh;
+    background-image: url("https://cdn.britannica.com/84/203584-131-357FBE7D/speed-internet-technology-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    background-image: linear-gradient(to right, white, rgb(144, 144, 215));
+    height: 91%;
+   
+}

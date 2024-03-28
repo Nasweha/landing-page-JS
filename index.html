@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./style.css">
+
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <title>Landing page</title>
+      <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <header>
+
+        <nav class="navbar bg-transparent p-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-bars fa-2x text-light me-3"></i>
+                <span class="fs-1  text-light"><B>DASHBORD</B></span>
+              </a>
+              <div>
+                <button class="btn" onclick="logout()">
+                  <i class="fa-solid fa-circle-user text-light fa-2x "></i>
+                  <span class="text-light fs-3">Log out</span>
+                </button>
+            </div>
+            </div>
+            
+          </nav>
+
+     </header>
+
+     <div class="container-fluid mt-5">
+
+        <h1 class="text-center"> WELCOME <span class="text-danger" id="result">USER</span></h1>
+        <P class="mt-5 fs-5" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsum rerum eveniet exercitationem itaque, fugiat sapiente adipisci, dolore fugit ducimus, quam illum quasi neque iure ipsam nemo in? Odit, quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facilis expedita tempora, inventore numquam natus explicabo, laborum itaque necessitatibus velit nulla ex ad non, quod minima similique maxime? Eos, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse quas, enim molestias vitae harum totam obcaecati excepturi exercitationem iste, velit facere vel dicta! Unde mollitia vitae dolor ipsa officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sunt ut repellendus architecto distinctio, nobis maiores explicabo vel eaque, expedita natus? Est, illum ipsam! Nulla iusto aspernatur quos necessitatibus ab!</P>
+
+     </div>
+</body>
+<script> 
+let user = localStorage.getItem("user")
+// console.log(user);
+if(!user){
+  window.location='login.html'
+}
+else{
+  result.innerHTML=user
+}
+
+
+
+
+
+function logout(){
+  localStorage.removeItem("user")
+  window.location="login.html"
+}
+</script>
+</html>
